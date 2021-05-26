@@ -72,8 +72,7 @@ print("\t\tcase ({})".format(inputSignal))
 fmt = "\t\t\t8'h{0:02x}: {1} <= 8'h{2:02x}; "
 
 for r,c in it.product(range(sBoxWidth), range(sBoxWidth)):
-    lut_out = aes_sbox[r][c]
-    print(fmt.format(formatInput(r,c), outputSignal, lut_out))
+    print(fmt.format(formatInput(r,c), outputSignal, aes_sbox[r][c]))
 
 print("\t\tendcase")
 print("\tend")
