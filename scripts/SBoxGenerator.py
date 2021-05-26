@@ -6,8 +6,8 @@ sBoxWidth 		= 16
 plaintextWidth 	= 8
 hexCodeLength  	= plaintextWidth/4
 
-inputSignal  = 'fromcounterblock_in'
-outputSignal = 'toxorlogic_out'
+inputSignal  = 'lut_in'
+outputSignal = 'lut_out'
 
 aes_sbox = [
     [int('63', 16), int('7c', 16), int('77', 16), int('7b', 16), int('f2', 16), int('6b', 16), int('6f', 16),
