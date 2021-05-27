@@ -1,4 +1,4 @@
-module caesar_cipher (
+module aes_sbox_stream_cipher (
    input            clk
   ,input            rst_n	  // reset signal, active low
   ,input            din_valid     //1'b1 used to notify input character validity, normally 1'b0 
