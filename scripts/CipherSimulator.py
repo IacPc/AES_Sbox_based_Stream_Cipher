@@ -58,7 +58,7 @@ aes_sbox = [
 ]
 
 def writeOutputFile(index, data):
-		with open(testFolder + 'output' + str(index), 'wb') as outfile: 
+		with open(testFolder + 'output' + str(index) +"_target", 'wb') as outfile: 
 			outfile.write(data)
 
 
@@ -68,7 +68,7 @@ print("found " + str(len(testFiles)) + " test files")
 inData = b""
 index = 0
 
-for f in testFiles:
+for f in testFiles[0]:
 	counterOut = simmKey
 	assert (simmKey.bit_length() == 5), "simmKey on [" + str(simmKey.bit_length())+ "]"
 	print("***processing " + f + "***")
@@ -82,7 +82,7 @@ for f in testFiles:
 
 	for d in inData:
 		outdata = outdata + (d ^ aes_sbox[row(counterOut)][col(counterOut)]).to_bytes(1,byteorder="big")
-		counterOut = (counterOut + 1) % 256
+        counterOut = (counterOut + 1) % 256
 
 	writeOutputFile(index, outdata)
 	index = index + 1

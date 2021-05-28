@@ -61,19 +61,17 @@ aes_sbox = [
 ]
 
 
-print("module sbox_lut({});".format(inputSignal))
-print("\tinput  [{}:0] {};".format(plaintextWidth - 1, inputSignal))
-print("\toutput [{}:0] {};".format(plaintextWidth - 1, outputSignal))
-print()
+print("\tfunction [{}:0] sbox_lut;".format(plaintextWidth - 1))
+print("\t\tinput  [{}:0] {};".format(plaintextWidth - 1, inputSignal))
+print("\t\tbegin")
 
-print("\talways @({}) begin".format(inputSignal))
-print("\t\tcase ({})".format(inputSignal))
+print("\t\t\tcase ({})".format(inputSignal))
 
-fmt = "\t\t\t8'h{0:02x}: {1} <= 8'h{2:02x}; "
+fmt = "\t\t\t\t8'h{0:02x}: {1} = 8'h{2:02x}; "
 
 for r,c in it.product(range(sBoxWidth), range(sBoxWidth)):
     print(fmt.format(formatInput(r,c), outputSignal, aes_sbox[r][c]))
 
-print("\t\tendcase")
-print("\tend")
-print("endmodule")
+print("\t\t\tendcase")
+print("\t\tend")
+print("\tendfunction")

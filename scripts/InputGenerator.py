@@ -20,7 +20,7 @@ def init():
 	random.seed(LARGEPRIMENUMBER)
 
 def writeOutputBinaryFile(index, data):
-	with open(testFolder + 'input' + str(index), 'wb') as outfile: 
+	with open(testFolder + 'input' + str(index) + ".txt", 'wb') as outfile: 
 		outfile.write(data)
 
 def writeOutputASCIIFile(index, data):
