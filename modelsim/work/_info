@@ -11,7 +11,7 @@ cModel Technology
 d/home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher
 vaes_sbox_stream_cipher
 Z0 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z1 !s110 1622196090
+Z1 !s110 1622279434
 !i10b 1
 !s100 Fi^562J;]IL5?X<alDK6]3
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -19,16 +19,16 @@ I1f7T7T0EaVIA4:WSA2o[E0
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 S1
 Z4 d/home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/modelsim
-w1622195208
+w1622207775
 8/home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/db/stream_cipher.sv
 F/home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/db/stream_cipher.sv
-!i122 78
+!i122 116
 L0 1 346
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1622196090.000000
+Z6 !s108 1622279434.000000
 !s107 /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/db/stream_cipher.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/db/stream_cipher.sv|
 !i113 1
@@ -63,17 +63,17 @@ vstream_cipher_tb_enc
 R0
 R1
 !i10b 1
-!s100 men0Nn>_6:^AbalXaN7;70
+!s100 LfblhhN8OXSUC10Q0B69H0
 R2
-I5=Sgi]DhK12i36>ZPH93A2
+IgLDRJgW268TTXWV6iO94]2
 R3
 S1
 R4
-w1622196080
+w1622279400
 8/home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv
 F/home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv
-!i122 79
-L0 8 113
+!i122 117
+L0 8 115
 R5
 r1
 !s85 0
