@@ -61,7 +61,7 @@ aes_sbox = [
 ]
 
 
-print("\tfunction [{}:0] sbox_lut;".format(plaintextWidth - 1))
+print("\tfunction SBOXLUT [{}:0] sbox_lut;".format(plaintextWidth - 1))
 print("\t\tinput  [{}:0] {};".format(plaintextWidth - 1, inputSignal))
 print("\t\tbegin")
 

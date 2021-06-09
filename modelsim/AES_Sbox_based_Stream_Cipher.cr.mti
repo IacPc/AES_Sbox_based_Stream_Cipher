@@ -1,4 +1,11 @@
-/home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/db/stream_cipher.sv {1 {vlog -work work -sv -stats=none /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/db/stream_cipher.sv
+/home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_dec.sv {1 {vlog -work work -sv -stats=none /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_dec.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module stream_cipher_tb_enc
+
+Top level modules:
+	stream_cipher_tb_enc
+
+} {} {}} /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/db/stream_cipher.sv {1 {vlog -work work -sv -stats=none /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/db/stream_cipher.sv
 Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 -- Compiling module aes_sbox_stream_cipher
 

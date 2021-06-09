@@ -17,6 +17,10 @@ module aes_sbox_stream_cipher (
   localparam S1 = 2'b11;
   localparam S2 = 2'b10;
 
+  // ---------------------------------------------------------------------------
+  // look-up table aes-sbox
+  // ---------------------------------------------------------------------------
+
   function bit [7:0] sbox_lut;
   		input [7:0] lut_in;
   		case (lut_in)
@@ -336,7 +340,7 @@ module aes_sbox_stream_cipher (
               star <= (din_valid == 1'b1) ? S2 : S1;
               dout_ready  <= 1'b1;
               txt_in <= (din_valid == 1'b1) ? txt_in_char : 8'h00;
-              counter_out <= (din_valid == 1'b1) ? counter_out + 8'h01 : counter_out;
+              counter_out  <= (din_valid == 1'b1) ? counter_out + 8'h01 : counter_out;
               txt_out_char <= sbox_lut(counter_out) ^ txt_xor_in;
             end
       endcase // star

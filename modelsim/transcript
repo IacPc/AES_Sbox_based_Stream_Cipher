@@ -1,118 +1,25 @@
 # Loading project AES_Sbox_based_Stream_Cipher
+dataset reload -f
+# Dataset not found: 
+dataset reload -f
+# Dataset not found: 
+dataset reload -f
+# Dataset not found: 
+dataset reload -f
+# Dataset not found: 
+dataset reload -f
+# Dataset not found: 
+dataset reload -f
+# Dataset not found: 
+dataset reload -f
+# Dataset not found: 
+# Load canceled
 # Compile of stream_cipher.sv was successful.
-# Compile of stream_cipher_tb_enc.sv was successful.
+# Compile of stream_cipher_tb_dec.sv was successful.
 # 2 compiles, 0 failed with no errors.
 vsim work.stream_cipher_tb_enc
 # vsim work.stream_cipher_tb_enc 
-# Start time: 09:43:41 on May 29,2021
-# Loading sv_std.std
-# Loading work.stream_cipher_tb_enc
-# Loading work.aes_sbox_stream_cipher
-add wave -position insertpoint  \
-sim:/stream_cipher_tb_enc/clk
-add wave -position insertpoint  \
-sim:/stream_cipher_tb_enc/rst_n
-add wave -position insertpoint  \
-sim:/stream_cipher_tb_enc/din_valid
-add wave -position insertpoint  \
-sim:/stream_cipher_tb_enc/symmetric_key
-add wave -position insertpoint  \
-sim:/stream_cipher_tb_enc/txt_in_char
-add wave -position insertpoint  \
-sim:/stream_cipher_tb_enc/txt_out_char
-add wave -position insertpoint  \
-sim:/stream_cipher_tb_enc/dout_ready
-add wave -position insertpoint  \
-sim:/stream_cipher_tb_enc/CIPHER/star
-run -all
-# Encrypting file 'input0.txt' to 'ouput0.txt' ...
-# c
-# ¡
-# 
-# –
-# 5
-# (
-# Ğ
-# Ú
-# »
-# Ğ
-# Ã
-# ø
-# Encryption completed
-# ** Note: $stop    : /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv(144)
-#    Time: 155 ps  Iteration: 1  Instance: /stream_cipher_tb_enc
-# Break in Module stream_cipher_tb_enc at /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv line 144
-quit -sim
-# End time: 09:49:05 on May 29,2021, Elapsed time: 0:05:24
-# Errors: 0, Warnings: 2
-# Compile of stream_cipher.sv was successful.
-# Compile of stream_cipher_tb_enc.sv was successful.
-# 2 compiles, 0 failed with no errors.
-vsim work.stream_cipher_tb_enc
-# vsim work.stream_cipher_tb_enc 
-# Start time: 10:16:37 on May 29,2021
-# Loading sv_std.std
-# Loading work.stream_cipher_tb_enc
-# Loading work.aes_sbox_stream_cipher
-add wave -position insertpoint  \
-sim:/stream_cipher_tb_enc/clk \
-sim:/stream_cipher_tb_enc/rst_n \
-sim:/stream_cipher_tb_enc/din_valid
-add wave -position insertpoint  \
-sim:/stream_cipher_tb_enc/symmetric_key
-add wave -position end  sim:/stream_cipher_tb_enc/txt_in_char
-add wave -position end  sim:/stream_cipher_tb_enc/txt_out_char
-add wave -position 2  sim:/stream_cipher_tb_enc/CIPHER/star
-run -all
-# Encrypting file 'input0.txt' to 'ouput0.txt' ...¡
-# 
-# –
-# 5
-# (
-# Ğ
-# Ú
-# »
-# Ğ
-# Ã
-# ø
-# …
-# Encryption completed
-# ** Note: $stop    : /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv(151)
-#    Time: 155 ps  Iteration: 1  Instance: /stream_cipher_tb_enc
-# Break in Module stream_cipher_tb_enc at /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv line 151
-add wave -position insertpoint  \
-sim:/stream_cipher_tb_enc/dout_ready
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
-# Encrypting file 'input0.txt' to 'ouput0.txt' ...¡
-# 
-# –
-# 5
-# (
-# Ğ
-# Ú
-# »
-# Ğ
-# Ã
-# ø
-# …
-# Encryption completed
-# ** Note: $stop    : /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv(151)
-#    Time: 155 ps  Iteration: 1  Instance: /stream_cipher_tb_enc
-# Break in Module stream_cipher_tb_enc at /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv line 151
-quit -sim
-# End time: 10:30:15 on May 29,2021, Elapsed time: 0:13:38
-# Errors: 0, Warnings: 1
-# Compile of stream_cipher.sv was successful.
-# Compile of stream_cipher_tb_enc.sv was successful.
-# 2 compiles, 0 failed with no errors.
-# Compile of stream_cipher.sv was successful.
-# Compile of stream_cipher_tb_enc.sv was successful.
-# 2 compiles, 0 failed with no errors.
-vsim work.stream_cipher_tb_enc
-# vsim work.stream_cipher_tb_enc 
-# Start time: 10:33:48 on May 29,2021
+# Start time: 10:22:46 on Jun 09,2021
 # Loading sv_std.std
 # Loading work.stream_cipher_tb_enc
 # Loading work.aes_sbox_stream_cipher
@@ -123,1870 +30,957 @@ add wave -position end  sim:/stream_cipher_tb_enc/symmetric_key
 add wave -position end  sim:/stream_cipher_tb_enc/txt_in_char
 add wave -position end  sim:/stream_cipher_tb_enc/txt_out_char
 add wave -position end  sim:/stream_cipher_tb_enc/dout_ready
-add wave -position end  sim:/stream_cipher_tb_enc/CIPHER/star
 run -all
-# Encrypting file 'input0.txt' to 'ouput0.txt' ...¡
-# 
-# –
-# 5
-# (
-# Ğ
-# Ú
-# »
-# Ğ
-# Ã
-# ø
-# …
-# x
-# 
-# Encryption completed
-# ** Note: $stop    : /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv(149)
-#    Time: 175 ps  Iteration: 1  Instance: /stream_cipher_tb_enc
-# Break in Module stream_cipher_tb_enc at /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv line 149
-add wave -position end  sim:/stream_cipher_tb_enc/CIPHER/txt_in_char
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-run -all
-# Encrypting file 'input0.txt' to 'ouput0.txt' ...¡
-# 
-# –
-# 5
-# (
-# Ğ
-# Ú
-# »
-# Ğ
-# Ã
-# ø
-# …
-# x
-# 
-# Encryption completed
-# ** Note: $stop    : /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv(149)
-#    Time: 175 ps  Iteration: 1  Instance: /stream_cipher_tb_enc
-# Break in Module stream_cipher_tb_enc at /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv line 149
-add wave -position end  sim:/stream_cipher_tb_enc/CIPHER/txt_in
-restart -f
-run -all
-# Encrypting file 'input0.txt' to 'ouput0.txt' ...¡
-# 
-# –
-# 5
-# (
-# Ğ
-# Ú
-# »
-# Ğ
-# Ã
-# ø
-# …
-# x
-# 
-# Encryption completed
-# ** Note: $stop    : /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv(149)
-#    Time: 175 ps  Iteration: 1  Instance: /stream_cipher_tb_enc
-# Break in Module stream_cipher_tb_enc at /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv line 149
-restart -f
-run -all
-# Encrypting file 'input0.txt' to 'ouput0.txt' ...¡
-# 
-# –
-# 5
-# (
-# Ğ
-# Ú
-# »
-# Ğ
-# Ã
-# ø
-# …
-# x
-# 
-# Encryption completed
-# ** Note: $stop    : /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv(149)
-#    Time: 175 ps  Iteration: 1  Instance: /stream_cipher_tb_enc
-# Break in Module stream_cipher_tb_enc at /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv line 149
-# Compile of stream_cipher.sv was successful.
-# Compile of stream_cipher_tb_enc.sv was successful.
-# 2 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.stream_cipher_tb_enc
-# Loading work.aes_sbox_stream_cipher
-run -all
-# Encrypting file 'input1' to 'ouput1' ...€
-# 
-# Ú
-# 
-# (
-# 
-# Ë
-# »
-# ‚
-# Á
-# ó
-# Ê
-# R
-# ¶
-# Ö
-# ‰
-# ö
-# T
-# U
-# ^
-# ×
-# ¢
-# ÷
-# 
-# Å
-# –
-# 
-# ­
-# X
-# f
-# g
-# ¢
-# )
-# ¦
-# 8
-# û
-# j
-# ö
-# s
-# }
-#  
-# 
-# Š
-# U
-# Ó
-# 
-# l
-# í
-# X
-# 
-# ;
-# 
-# ;
-# Ò
-# ;
-# \
-# ·
-# Ç
-# ]
-# ‚
-# 
-# 
-# >
-# °
-#  
-# œ
-# U
-# 
-# ß
-# ?
-# 
-# ë
-# Í
-# V
-# ,
-# *
-# 1
-# ®
-# ğ
-# †
-# Æ
-# Û
-# !
-# (
-# T
-# ê
+# Decrypting file 'enc0' to 'dec0.txt' ...h
 # e
-# ˜
-# "
-# 
-# 9
-# O
-# ü
-# Í
-# q
-# Á
-# )
-# ü
-# ñ
-# ø
-# 
-# ÿ
-# Ï
-# Ò
-# ³
-# M
-# u
-# ‘
-# 
-# ³
-# í
-# y
-# }
-# Ì
-# /
-# ø
-# '
-# x
-# ä
-# Â
-# ^
-# Z
-# 
-# 
-# <
-# ~
-# 
-# 
-# ¡
-# <
-# >
-# ¢
-# ³
-# ñ
-# ú
-# %
-# †
-# Ñ
-# d
-# ¿
-# *
-# 
-# º
-# Î
-# 8
-# ù
-# ‚
-# i
-# `
-# V
-# )
-# ±
-# °
-# Ã
-# B
-# ø
-# ù
-# Ä
-# 5
-# ˆ
-# ¦
-# Q
-# 
-# ¬
-# õ
-# 
-# !
-# L
-# &
-# 
-# 
-# 
-# 
-# 
 # l
-# Ó
-# X
-# I
-# [
 # l
-# Ï
-# Ó
-# ¨
-# ‰
-# ×
-# 
-# m
-# 9
-# Ü
-# í
-# ì
-# 
-# L
-# Ü
-# 
-# h
-# n
-# —
-# b
-# 
-# P
-# %
-# Ê
-# ç
-# á
-# x
-# ¾
-# ’
-# —
-# ş
-# ~
-# 
-# ¼
-# à
-# à
-# ú
-# ?
-# 
-# º
-# «
-# u
-# K
-# ¶
-# ã
-# Ï
-# ï
-# d
-# Ÿ
-# ’
-# +
-# H
-# 2
-# û
-# D
-# k
-# Å
-# 3
-# ×
-# 
-# 
-# \
-# 
-# [
-# †
-# 
-# O
-# ¤
-# B
-# s
-# 
-# [
-# —
-# °
-# Å
-# 
-# À
-# ñ
-# ¬
-# ]
-# –
-# ,
+# o
 #  
-# ‚
-# Ä
-# ô
-# Ö
-# Æ
-# ¼
-# Æ
-# 
-# ´
-# Ö
-# ‘
-# ÿ
-# G
-# 
-# Z
-# ×
-# ¸
-# ]
-# …
-# †
-# ƒ
-# 
-# ®
-# T
-# {
-# p
-# ¦
-# 
-# 
-# É
-# 
-# Encryption completed
-# ** Note: $stop    : /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv(149)
-#    Time: 2945 ps  Iteration: 1  Instance: /stream_cipher_tb_enc
-# Break in Module stream_cipher_tb_enc at /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv line 149
-# Compile of stream_cipher.sv was successful.
-# Compile of stream_cipher_tb_enc.sv was successful.
-# 2 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.stream_cipher_tb_enc
-# Loading work.aes_sbox_stream_cipher
-run -all
-# Encrypting file 'input1' to 'ouput1' ...€
-# 
-# Ú
-# 
-# (
-# 
-# Ë
-# »
-# ‚
-# Á
-# ó
-# Ê
-# R
-# ¶
-# Ö
-# ‰
-# ö
-# T
-# U
-# ^
-# ×
-# ¢
-# ÷
-# 
-# Å
-# –
-# 
-# ­
-# X
-# f
-# g
-# ¢
-# )
-# ¦
-# 8
-# û
-# j
-# ö
-# s
-# }
-#  
-# 
-# Š
-# U
-# Ó
-# 
+# w
+# o
+# r
 # l
-# í
-# X
-# 
-# ;
-# 
-# ;
-# Ò
-# ;
-# \
-# ·
-# Ç
-# ]
-# ‚
-# 
-# 
-# >
-# °
-#  
-# œ
-# U
-# 
-# ß
-# ?
-# 
-# ë
-# Í
-# V
-# ,
-# *
-# 1
-# ®
-# ğ
-# †
-# Æ
-# Û
-# !
-# (
-# T
-# ê
-# e
-# ˜
-# "
-# 
-# 9
-# O
-# ü
-# Í
-# q
-# Á
-# )
-# ü
-# ñ
-# ø
-# 
-# ÿ
-# Ï
-# Ò
-# ³
-# M
-# u
-# ‘
-# 
-# ³
-# í
-# y
-# }
-# Ì
-# /
-# ø
-# '
-# x
-# ä
-# Â
-# ^
-# Z
-# 
-# 
-# <
-# ~
-# 
-# 
-# ¡
-# <
-# >
-# ¢
-# ³
-# ñ
-# ú
-# %
-# †
-# Ñ
 # d
-# ¿
-# *
-# 
-# º
-# Î
-# 8
-# ù
-# ‚
-# i
-# `
-# V
-# )
-# ±
-# °
-# Ã
-# B
-# ø
-# ù
-# Ä
-# 5
-# ˆ
-# ¦
-# Q
-# 
-# ¬
-# õ
-# 
 # !
-# L
-# &
-# 
-# 
-# 
-# 
-# 
-# l
-# Ó
-# X
-# I
-# [
-# l
-# Ï
-# Ó
-# ¨
-# ‰
-# ×
-# 
-# m
-# 9
-# Ü
-# í
-# ì
-# 
-# L
-# Ü
-# 
-# h
-# n
-# —
-# b
-# 
-# P
-# %
-# Ê
-# ç
-# á
-# x
-# ¾
-# ’
-# —
-# ş
-# ~
-# 
-# ¼
-# à
-# à
-# ú
-# ?
-# 
-# º
-# «
-# u
-# K
-# ¶
-# ã
-# Ï
-# ï
-# d
-# Ÿ
-# ’
-# +
-# H
-# 2
-# û
-# D
-# k
-# Å
-# 3
-# ×
-# 
-# 
-# \
-# 
-# [
-# †
-# 
-# O
-# ¤
-# B
-# s
-# 
-# [
-# —
-# °
-# Å
-# 
-# À
-# ñ
-# ¬
-# ]
-# –
-# ,
-#  
-# ‚
-# Ä
-# ô
-# Ö
-# Æ
-# ¼
-# Æ
-# 
-# ´
-# Ö
-# ‘
-# ÿ
-# G
-# 
-# Z
-# ×
-# ¸
-# ]
-# …
-# †
-# ƒ
-# 
-# ®
-# T
-# {
-# p
-# ¦
 # 
 # 
-# É
-# Encryption completed
-# ** Note: $stop    : /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv(151)
-#    Time: 2945 ps  Iteration: 1  Instance: /stream_cipher_tb_enc
-# Break in Module stream_cipher_tb_enc at /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv line 151
-# Compile of stream_cipher.sv was successful.
-# Compile of stream_cipher_tb_enc.sv was successful.
-# 2 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.stream_cipher_tb_enc
-# Loading work.aes_sbox_stream_cipher
-run -all
-# Encrypting file 'input0.txt' to 'ouput0' ...¡
-# 
-# –
-# 5
-# (
-# Ğ
-# Ú
-# »
-# Ğ
-# Ã
-# ø
-# …
-# x
-# Encryption completed
-# ** Note: $stop    : /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv(119)
+# Decryption completed
+# ** Note: $stop    : /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_dec.sv(86)
 #    Time: 175 ps  Iteration: 1  Instance: /stream_cipher_tb_enc
-# Break in Module stream_cipher_tb_enc at /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv line 119
-# Compile of stream_cipher.sv was successful.
-# Compile of stream_cipher_tb_enc.sv was successful.
-# 2 compiles, 0 failed with no errors.
-run -all
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.stream_cipher_tb_enc
-# Loading work.aes_sbox_stream_cipher
-restart -f
-run -all
-# Encrypting file 'input1.txt' to 'ouput1' ...€
-# 
-# Ú
-# 
-# (
-# 
-# Ë
-# »
-# ‚
-# Á
-# ó
-# Ê
-# R
-# ¶
-# Ö
-# ‰
-# ö
-# T
-# U
-# ^
-# ×
-# ¢
-# ÷
-# 
-# Å
-# –
-# 
-# ­
-# X
-# f
-# g
-# ¢
-# )
-# ¦
-# 8
-# û
-# j
-# ö
-# s
-# }
-#  
-# 
-# Š
-# U
-# Ó
-# 
-# l
-# í
-# X
-# 
-# ;
-# 
-# ;
-# Ò
-# ;
-# \
-# ·
-# Ç
-# ]
-# ‚
-# 
-# 
-# >
-# °
-#  
-# œ
-# U
-# 
-# ß
-# ?
-# 
-# ë
-# Í
-# V
-# ,
-# *
-# 1
-# ®
-# ğ
-# †
-# Æ
-# Û
-# !
-# (
-# T
-# ê
-# e
-# ˜
-# "
-# 
-# 9
-# O
-# ü
-# Í
-# q
-# Á
-# )
-# ü
-# ñ
-# ø
-# 
-# ÿ
-# Ï
-# Ò
-# ³
-# M
-# u
-# ‘
-# 
-# ³
-# í
-# y
-# }
-# Ì
-# /
-# ø
-# '
-# x
-# ä
-# Â
-# ^
-# Z
-# 
-# 
-# <
-# ~
-# 
-# 
-# ¡
-# <
-# >
-# ¢
-# ³
-# ñ
-# ú
-# %
-# †
-# Ñ
-# d
-# ¿
-# *
-# 
-# º
-# Î
-# 8
-# ù
-# ‚
-# i
-# `
-# V
-# )
-# ±
-# °
-# Ã
-# B
-# ø
-# ù
-# Ä
-# 5
-# ˆ
-# ¦
-# Q
-# 
-# ¬
-# õ
-# 
-# !
-# L
-# &
-# 
-# 
-# 
-# 
-# 
-# l
-# Ó
-# X
-# I
-# [
-# l
-# Ï
-# Ó
-# ¨
-# ‰
-# ×
-# 
-# m
-# 9
-# Ü
-# í
-# ì
-# 
-# L
-# Ü
-# 
-# h
-# n
-# —
-# b
-# 
-# P
-# %
-# Ê
-# ç
-# á
-# x
-# ¾
-# ’
-# —
-# ş
-# ~
-# 
-# ¼
-# à
-# à
-# ú
-# ?
-# 
-# º
-# «
-# u
-# K
-# ¶
-# ã
-# Ï
-# ï
-# d
-# Ÿ
-# ’
-# +
-# H
-# 2
-# û
-# D
-# k
-# Å
-# 3
-# ×
-# 
-# 
-# \
-# 
-# [
-# †
-# 
-# O
-# ¤
-# B
-# s
-# 
-# [
-# —
-# °
-# Å
-# 
-# À
-# ñ
-# ¬
-# ]
-# –
-# ,
-#  
-# ‚
-# Ä
-# ô
-# Ö
-# Æ
-# ¼
-# Æ
-# 
-# ´
-# Ö
-# ‘
-# ÿ
-# G
-# 
-# Z
-# ×
-# ¸
-# ]
-# …
-# †
-# ƒ
-# 
-# ®
-# T
-# {
-# p
-# ¦
-# 
-# 
-# É
-# Encryption completed
-# ** Note: $stop    : /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv(119)
-#    Time: 2945 ps  Iteration: 1  Instance: /stream_cipher_tb_enc
-# Break in Module stream_cipher_tb_enc at /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv line 119
-# Compile of stream_cipher.sv was successful.
-# Compile of stream_cipher_tb_enc.sv was successful.
-# 2 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.stream_cipher_tb_enc
-# Loading work.aes_sbox_stream_cipher
-run -all
-# Encrypting file 'input1.txt' to 'ouput1' ...€
-# 
-# Ú
-# 
-# (
-# 
-# Ë
-# »
-# ‚
-# Á
-# ó
-# Ê
-# R
-# ¶
-# Ö
-# ‰
-# ö
-# T
-# U
-# ^
-# ×
-# ¢
-# ÷
-# 
-# Å
-# –
-# 
-# ­
-# X
-# f
-# g
-# ¢
-# )
-# ¦
-# 8
-# û
-# j
-# ö
-# s
-# }
-#  
-# 
-# Š
-# U
-# Ó
-# 
-# l
-# í
-# X
-# 
-# ;
-# 
-# ;
-# Ò
-# ;
-# \
-# ·
-# Ç
-# ]
-# ‚
-# 
-# 
-# >
-# °
-#  
-# œ
-# U
-# 
-# ß
-# ?
-# 
-# ë
-# Í
-# V
-# ,
-# *
-# 1
-# ®
-# ğ
-# †
-# Æ
-# Û
-# !
-# (
-# T
-# ê
-# e
-# ˜
-# "
-# 
-# 9
-# O
-# ü
-# Í
-# q
-# Á
-# )
-# ü
-# ñ
-# ø
-# 
-# ÿ
-# Ï
-# Ò
-# ³
-# M
-# u
-# ‘
-# 
-# ³
-# í
-# y
-# }
-# Ì
-# /
-# ø
-# '
-# x
-# ä
-# Â
-# ^
-# Z
-# 
-# 
-# <
-# ~
-# 
-# 
-# ¡
-# <
-# >
-# ¢
-# ³
-# ñ
-# ú
-# %
-# †
-# Ñ
-# d
-# ¿
-# *
-# 
-# º
-# Î
-# 8
-# ù
-# ‚
-# i
-# `
-# V
-# )
-# ±
-# °
-# Ã
-# B
-# ø
-# ù
-# Ä
-# 5
-# ˆ
-# ¦
-# Q
-# 
-# ¬
-# õ
-# 
-# !
-# L
-# &
-# 
-# 
-# 
-# 
-# 
-# l
-# Ó
-# X
-# I
-# [
-# l
-# Ï
-# Ó
-# ¨
-# ‰
-# ×
-# 
-# m
-# 9
-# Ü
-# í
-# ì
-# 
-# L
-# Ü
-# 
-# h
-# n
-# —
-# b
-# 
-# P
-# %
-# Ê
-# ç
-# á
-# x
-# ¾
-# ’
-# —
-# ş
-# ~
-# 
-# ¼
-# à
-# à
-# ú
-# ?
-# 
-# º
-# «
-# u
-# K
-# ¶
-# ã
-# Ï
-# ï
-# d
-# Ÿ
-# ’
-# +
-# H
-# 2
-# û
-# D
-# k
-# Å
-# 3
-# ×
-# 
-# 
-# \
-# 
-# [
-# †
-# 
-# O
-# ¤
-# B
-# s
-# 
-# [
-# —
-# °
-# Å
-# 
-# À
-# ñ
-# ¬
-# ]
-# –
-# ,
-#  
-# ‚
-# Ä
-# ô
-# Ö
-# Æ
-# ¼
-# Æ
-# 
-# ´
-# Ö
-# ‘
-# ÿ
-# G
-# 
-# Z
-# ×
-# ¸
-# ]
-# …
-# †
-# ƒ
-# 
-# ®
-# T
-# {
-# p
-# ¦
-# 
-# 
-# É
-# Encryption completed
-# ** Note: $stop    : /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv(119)
-#    Time: 2945 ps  Iteration: 1  Instance: /stream_cipher_tb_enc
-# Break in Module stream_cipher_tb_enc at /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv line 119
-# Compile of stream_cipher.sv was successful.
-# Compile of stream_cipher_tb_enc.sv was successful.
-# 2 compiles, 0 failed with no errors.
-run -all
+# Break in Module stream_cipher_tb_enc at /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_dec.sv line 86
 quit -sim
-# End time: 11:08:25 on May 29,2021, Elapsed time: 0:34:37
-# Errors: 0, Warnings: 2
+# End time: 10:24:09 on Jun 09,2021, Elapsed time: 0:01:23
+# Errors: 0, Warnings: 4
 # Compile of stream_cipher.sv was successful.
-# Compile of stream_cipher_tb_enc.sv was successful.
+# Compile of stream_cipher_tb_dec.sv was successful.
 # 2 compiles, 0 failed with no errors.
 vsim work.stream_cipher_tb_enc
 # vsim work.stream_cipher_tb_enc 
-# Start time: 11:08:38 on May 29,2021
+# Start time: 10:25:14 on Jun 09,2021
 # Loading sv_std.std
 # Loading work.stream_cipher_tb_enc
 # Loading work.aes_sbox_stream_cipher
+add wave -position end  sim:/stream_cipher_tb_enc/clk
+add wave -position end  sim:/stream_cipher_tb_enc/rst_n
+add wave -position end  sim:/stream_cipher_tb_enc/din_valid
+add wave -position end  sim:/stream_cipher_tb_enc/symmetric_key
+add wave -position end  sim:/stream_cipher_tb_enc/txt_in_char
+add wave -position end  sim:/stream_cipher_tb_enc/txt_out_char
+add wave -position end  sim:/stream_cipher_tb_enc/dout_ready
 run -all
-# Encrypting file 'input2.txt' to 'ouput2' ...†
-# 
-# 
-# º
-# z
-# 2
-# Œ
-# Ÿ
-# ‡
-# 
-# Ø
-# ÿ
-# ˆ
-# W
-# í
-# ”
-# £
-# ¹
-# P
-# 
-# 
-# 
-# Ğ
-# û
-# 
-# Á
-#  
-# 
-# 
-# á
-# 
-# @
-# 8
-# ÷
-# Q
-# ½
-# 7
-# ¥
-# &
-# Ü
-# .
-# g
-# ÷
-# ®
-# £
+# Decrypting file 'enc0' to 'dec0.txt' ...h
+# e
+# l
+# l
 # o
-# Ä
-# 
-# 6
-# Ü
-# W
-# ?
-# "
-# ^
+#  
 # w
-# Í
-# 3
-# W
-# é
-# Î
-# 
-# Ş
-# 
-# ¹
-# 7
-# ‚
-#
-# 
-# b
-# Ğ
-# „
-# "
-# )
-# ç
-# Š
-# \
-# 7
-# 
-# w
-# ı
-# ‘
-# „
-# Ú
-# Ş
-# }
-# n
-# 
-# «
-# 
-# ¥
-# 8
-# 
-# 
-# }
-# Î
-# Æ
-# 4
-# Ó
-# (
-# É
-# ò
-# È
-# B
-# „
-# Õ
-# ÿ
-# à
-# Q
-# a
-# ¼
-# À
-# «
-# ¤
-# $
-# z
-# Ğ
-# >
-# ú
-# 8
-# F
-# 
-# 
-# _
-# 
-# M
-# 
+# o
 # r
-# J
-# S
-# õ
-# -
-# õ
-# Encryption completed
-# ** Note: $stop    : /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv(119)
-#    Time: 1345 ps  Iteration: 1  Instance: /stream_cipher_tb_enc
-# Break in Module stream_cipher_tb_enc at /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv line 119
-# Compile of stream_cipher.sv was successful.
-# Compile of stream_cipher_tb_enc.sv was successful.
-# 2 compiles, 0 failed with no errors.
-# Compile of stream_cipher.sv was successful.
-# Compile of stream_cipher_tb_enc.sv was successful.
-# 2 compiles, 0 failed with no errors.
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.stream_cipher_tb_enc
-# Loading work.aes_sbox_stream_cipher
-run -all
-# Encrypting file 'input3.txt' to 'ouput3' ...Œ
-# 
-# ½
-# }
-# &
-# Ë
-# ‘
-# ¹
-# Ş
-# ƒ
-# ó
-# Á
+# l
+# d
 # !
-# á
-# Ì
-# Ç
-# Â
-# L
-# k
-# k
-# ‘
-# 
-# S
-# æ
-# ’
-# Œ
-# J
-# —
-# r
-# _
-# :
-# í
-# 
-# ü
-# '
-# ï
-# 6
-# ÷
-# 4
-# ~
-# Ì
-# œ
-# ×
-# b
-# –
-# 
-# +
-# Å
-# y
-# p
-# m
-# C
-# ;
-# ÷
-# )
-# W
-# £
-# Ş
-# 
-# Œ
-# 
-# Encryption completed
-# ** Note: $stop    : /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv(119)
-#    Time: 655 ps  Iteration: 1  Instance: /stream_cipher_tb_enc
-# Break in Module stream_cipher_tb_enc at /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv line 119
+# 
+# 
+# Decryption completed
+# ** Note: $stop    : /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_dec.sv(86)
+#    Time: 175 ps  Iteration: 1  Instance: /stream_cipher_tb_enc
+# Break in Module stream_cipher_tb_enc at /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_dec.sv line 86
 # Compile of stream_cipher.sv was successful.
-# Compile of stream_cipher_tb_enc.sv was successful.
+# Compile of stream_cipher_tb_dec.sv was successful.
 # 2 compiles, 0 failed with no errors.
 restart -f
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # Loading work.stream_cipher_tb_enc
 # Loading work.aes_sbox_stream_cipher
 run -all
-# Encrypting file 'input4.txt' to 'ouput4' ... 
-# Y
-# 
-# 
-# a
-# ¢
-# 
-# å
-# ş
-# €
-# ¦
-# Ÿ
-# 
-# ·
-# Œ
-# ·
-# Ó
-# a
-# U
-# u
-# 
-# ‹
-# 
-# Ï
-# ¿
-# À
-# 
-# å
-# 
-# U
-# O
-# ¡
-# J
-# …
-# c
-# Ë
-# q
-# Ò
-# /
-# j
-# Ğ
-# Ò
-# ‚
-# ^
-# Œ
-# T
-# w
-# ş
-# Q
-# {
-# i
-# 
-# 
-# À
-# 
-# 
-# ¸
-# ˆ
-# L
-# ´
-# W
-# á
-# j
-# â
-# '
-# ˜
-# 
-# —
-# Ğ
-# %
-# H
-# 
-# •
-# 
-# {
-# /
-# 
-# î
-# «
-# Í
-# Ì
-# ´
-# 
-# 
-# }
-# ö
-# 3
-# È
-# [
-# \
-# '
-# X
-# á
-# ı
-# 	
-# â
-# 
-# ê
-# ì
-# ¬
-# @
-# Ş
-# Ğ
-# ã
-# ¶
-# 
-# +
-# Ú
-# 
-# ‚
-# ı
-# ~
-# I
-# 
-# =
-# à
-# }
-# ?
-# ¿
-# Á
-# O
-# c
-# 
+# Decrypting file 'enc0' to 'dec0.txt' ...
+# h
+# e
+# l
+# l
 # o
-# 
-# 
-# 2
-# Ê
-# $
-# ó
-# k
-# 
-# É
-# Ë
-# "
-# 
-# ó
-# 1
-# á
-# 
-# X
-# ï
-# 
-# s
-# 
-# M
-# u
-# *
-# 
+#  
 # w
-# —
-# ­
-# Á
-# 
-# ¤
-# ¨
+# o
+# r
+# l
+# d
+# !
+# 
+# 
+# Decryption completed
+# ** Note: $stop    : /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_dec.sv(87)
+#    Time: 175 ps  Iteration: 1  Instance: /stream_cipher_tb_enc
+# Break in Module stream_cipher_tb_enc at /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_dec.sv line 87
+# Compile of stream_cipher.sv was successful.
+# Compile of stream_cipher_tb_dec.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.stream_cipher_tb_enc
+# Loading work.aes_sbox_stream_cipher
+run -all
+# Decrypting file 'enc0' to 'dec0.txt' ...
+# h
+# e
+# l
+# l
+# o
+#  
+# w
+# o
+# r
+# l
+# d
+# !
+# 
+# 
+# Decryption completed
+# ** Note: $stop    : /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_dec.sv(87)
+#    Time: 175 ps  Iteration: 1  Instance: /stream_cipher_tb_enc
+# Break in Module stream_cipher_tb_enc at /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_dec.sv line 87
+# Compile of stream_cipher.sv was successful.
+# Compile of stream_cipher_tb_dec.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.stream_cipher_tb_enc
+# Loading work.aes_sbox_stream_cipher
+run -all
+# Decrypting file 'enc0' to 'dec0.txt' ...
+# I
+# l
+#  
+# L
+# o
+# n
+# f
+# o
+#  
+# n
+# o
+# n
+#  
+# v
+# a
+# t
+# e
+# r
+# c
+# a
+#  
+# n
+# Ã
 # ©
-# 
-# ´
-# “
-# ^
-# 
-# ú
-# ®
-# }
-# è
-# 
-# 2
-# Ï
-# ¡
-# "
-# A
-# •
-# 3
-# ş
-# 3
-# w
-# J
-# 0
-# ˜
-# Ì
-# ó
-# ¨
-# 
-# 1
+#  
+# g
+# l
+# u
+# i
+# s
+# c
+# e
+# 
+# 
+# e
+#  
+# m
+# o
+# l
+# t
+# o
+#  
+# r
+# a
+# r
+# a
+# m
+# e
+# n
+# t
+# e
+#  
+# b
+# a
+# r
+# i
+# g
+# a
+# t
+# t
+# a
+# ,
+# 
+# 
+# m
+# a
+#  
+# q
+# u
+# a
+# n
+# d
+# o
+#  
+# s
+# o
+# f
+# f
+# i
+# a
+#  
+# i
+# l
+#  
+# b
+# e
+# g
+# o
+#  
+# a
+#  
+# b
+# i
+# s
+# c
+# e
+#  
+# b
+# i
+# s
+# c
+# e
+# ,
+# 
+# 
+# s
+# d
+# i
+# l
+# e
+# n
+# c
+# a
+#  
+# u
+# n
+#  
+# p
+# o
+# c
+# o
+#  
+# e
+#  
+# g
+# n
+# a
+# g
+# i
+# o
+#  
+# s
+# â
+# €
+# ™
+# a
+# r
+# c
+# h
+# i
+# p
+# a
+# t
+# t
+# a
+# .
+# 
+# 
+# Ã
+# ˆ
+#  
+# f
+# r
+# u
+# s
+# c
+# o
+#  
+# i
+# l
+#  
+# L
+# o
+# n
+# f
+# o
+# !
+#  
+# Ã
+# ˆ
+#  
+# p
+# i
+# e
+# n
+# o
 #  
 # d
-# 
-# é
-# ÿ
-# R
-# [
-# Í
-# ;
-# 
-# Y
-# ¯
-# j
-# 
-# W
+# i
+#  
+# l
+# u
+# p
+# i
+# g
+# n
+# a
+# 
+# 
+# a
 # r
-# 
-# ú
-# æ
-# >
-# Ç
-# Ù
-# Ÿ
-#  
-# Q
-# 
-# ı
-# ì
-# Â
-# è
-# Q
-#  
-# ­
-# ê
-# 9
-# 
-# ñ
-# ö
-# İ
-# Ó
-# w
-# ã
-# Ü
-# 
-# =
-#
-# ¤
+# r
+# a
+# f
+# f
 # e
+# r
+# i
+# a
+#  
+# m
+# a
+# l
+# v
+# e
+# r
+# s
+# a
+#  
+# e
+#  
+# s
+# o
+# f
+# o
+# l
+# e
+# n
+# t
+# a
+# !
+# 
+# 
+# S
+# e
+#  
+# c
+# i
+# o
+# n
+# f
+# i
+#  
+# t
+# i
+#  
+# s
+# b
+# i
+# d
+# u
+# g
+# l
+# i
+# a
+#  
+# e
+#  
+# t
+# i
+#  
+# a
+# r
+# r
+# u
+# p
+# i
+# g
+# n
+# a
+# 
+# 
+# s
+# e
+#  
+# l
+# u
+# g
+# r
+# i
+#  
+# t
+# i
+#  
+# b
+# o
+# t
+# a
+# l
+# l
+# a
+#  
+# e
+#  
+# t
+# i
+#  
+# c
+# r
+# i
+# v
+# e
+# n
+# t
+# a
+# .
+# 
+# 
+# Decryption completed
+# ** Note: $stop    : /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_dec.sv(87)
+#    Time: 2945 ps  Iteration: 1  Instance: /stream_cipher_tb_enc
+# Break in Module stream_cipher_tb_enc at /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_dec.sv line 87
+# Compile of stream_cipher.sv was successful.
+# Compile of stream_cipher_tb_dec.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.stream_cipher_tb_enc
+# Loading work.aes_sbox_stream_cipher
+run -all
+# Decrypting file 'enc0' to 'dec0.txt' ...
+# O
+# w
+# @
+#
+# u
 # |
-# à
-# 9
-# ˆ
-# P
-# +
-# 4
-# 
-# 
-#  
-# 
-# I
-# “
-# g
+# 2
+# S
+# -
+# w
+# c
+# ,
 # %
-# ]
-# ~
-# ¯
-# ç
-# Õ
-# 8
-# â
-# õ
-# ”
-# ;
-# Ä
-# b
-# w
-# ¢
-# ä
-# Š
-# Õ
-# Ô
-# ß
-# Â
-# 
-# ’
-# ñ
-# ·
-# ¶
-# w
-# w
-# w
-# Ä
-# 
-# 
-# ñ
-# º
-# ß
-# C
-# ¯
-# b
-# +
-# e
-# ÿ
-# 
-# µ
+# -
 #
-# ¢
-# $
-# ö
+# ^
+# *
+# v
+# 6
+# 5
+# '
+# 7
+# (
+# d
+# E
+# |
+# b
+# 9
+# *
+# U
+# <
+# 0
+# r
+# ~
+# /
+# 3
+#
+# F
+# )
+# u
+# w
+# L
+# H
+# H
+# v
+# t
+# ?
+# _
+# {
+# %
+# 9
+# 0
+# -
+# m
+# a
+# l
+# ?
+# }
+# V
+# =
+# 1
+# =
+# d
+# S
+#
+# `
+# B
+# ,
+# 5
+# y
+# C
+# ,
+# 4
+# e
+# }
+# O
+# /
+# 2
+# A
+# k
+# p
+# %
 # >
+#
+# ;
+# .
+# F
+# \
+# :
+# |
+# L
+# A
+# Q
+# n
+# e
+# p
+# h
+# F
+# `
+# U
+# z
+# q
+# i
+# I
+# :
+# p
+# q
+# C
+# 3
+# y
+# i
+# (
+# i
+# <
+# a
+# m
+# |
+# Q
+# J
+# :
+# !
+# 9
+# )
+# [
+# k
+# 9
+# 3
+# t
+# b
+# )
+# Decryption completed
+# ** Note: $stop    : /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_dec.sv(87)
+#    Time: 1345 ps  Iteration: 1  Instance: /stream_cipher_tb_enc
+# Break in Module stream_cipher_tb_enc at /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_dec.sv line 87
+# Compile of stream_cipher.sv was successful.
+# Compile of stream_cipher_tb_dec.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.stream_cipher_tb_enc
+# Loading work.aes_sbox_stream_cipher
+run -all
+# Decrypting file 'enc0' to 'dec0.txt' ...
+# E
+# d
+# G
+# $
+# a
+# ;
+# <
+# m
+# |
+# ,
+# o
+# e
+# S
+# !
+# {
+# :
+# Q
+# j
+# ]
+# T
+# f
+# R
 # g
-# È
-# ¾
-# „
-# Encryption completed
-# ** Note: $stop    : /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv(119)
+# C
+# w
+# }
+# ;
+# O
+# C
+# J
+# >
+# *
+# &
+# ?
+# ?
+# y
+# 3
+# m
+# 3
+# l
+# L
+# ~
+# <
+# E
+# $
+# s
+# "
+# F
+# U
+# j
+# v
+# -
+# a
+# W
+# {
+# l
+# u
+# m
+# 8
+# o
+# *
+# Decryption completed
+# ** Note: $stop    : /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_dec.sv(87)
+#    Time: 655 ps  Iteration: 1  Instance: /stream_cipher_tb_enc
+# Break in Module stream_cipher_tb_enc at /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_dec.sv line 87
+# Compile of stream_cipher.sv was successful.
+# Compile of stream_cipher_tb_dec.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Load canceled
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.stream_cipher_tb_enc
+# Loading work.aes_sbox_stream_cipher
+run -all
+# Decrypting file 'enc0' to 'dec0.txt' ...
+# i
+# $
+# d
+# I
+# &
+# R
+# =
+# 1
+# \
+# /
+# :
+# ;
+# b
+# w
+# ;
+# J
+# @
+# G
+# c
+# J
+# y
+# G
+# ,
+# j
+# Z
+# 1
+# `
+# =
+# =
+# @
+# K
+# f
+# i
+# F
+# {
+# ]
+# t
+# H
+# (
+# x
+# P
+# 0
+# i
+# y
+# >
+# !
+# ~
+# }
+# }
+# a
+# r
+# v
+# T
+# `
+# R
+# $
+# n
+# ;
+# e
+# W
+# x
+# e
+# 9
+# 3
+# '
+# u
+# >
+# k
+# a
+# ~
+# "
+# D
+# +
+# >
+# 1
+# c
+# Y
+# !
+# {
+# "
+# f
+# O
+# \
+# \
+# N
+# s
+# v
+# 1
+# Y
+#
+# w
+# d
+# ~
+# U
+# X
+# A
+# Y
+# e
+# ~
+# 1
+# x
+# +
+# l
+# U
+# l
+# !
+# ;
+# %
+# r
+# P
+# 0
+# r
+# Z
+# r
+# b
+# w
+# 9
+# (
+# {
+# f
+# 1
+# ^
+# v
+# 2
+# f
+# |
+# R
+# K
+# k
+# /
+# I
+# 2
+# Y
+# C
+# d
+# `
+# K
+# %
+# ?
+# _
+# S
+# 4
+# }
+# A
+# 8
+# G
+# <
+# ,
+# 5
+# +
+# U
+# ~
+# m
+# m
+# 5
+# =
+# M
+# ~
+# S
+# [
+# i
+# h
+# w
+# {
+# 3
+# A
+# m
+# d
+# ;
+# K
+# G
+# ;
+# ;
+# ;
+# D
+# K
+# R
+# d
+# ,
+# >
+# x
+# 5
+# @
+# \
+# E
+# ?
+# /
+# 3
+# b
+# u
+# "
+# e
+# x
+# ]
+# M
+# Z
+# Y
+# d
+# q
+# b
+# %
+# $
+# |
+# '
+#
+# Y
+# 8
+# g
+# 8
+# @
+# n
+# $
+# b
+# V
+# s
+# O
+# '
+# D
+# $
+# l
+# &
+# .
+# z
+# |
+# Z
+# z
+# \
+# :
+# P
+# U
+# b
+# =
+# H
+# s
+# P
+# m
+# 3
+# F
+# H
+# H
+# h
+# p
+# R
+# o
+# &
+# V
+# W
+# $
+# :
+# U
+# Q
+# 0
+# ~
+# N
+# (
+# w
+# ]
+# F
+# >
+# ;
+# 0
+# R
+# I
+# ^
+# w
+# {
+# C
+# f
+# s
+# R
+# F
+# J
+# %
+# Q
+# A
+# H
+# 3
+# M
+# 2
+# T
+# _
+# .
+# 2
+# w
+# S
+# >
+# a
+# 8
+# 6
+# v
+# ;
+# 4
+# !
+# l
+# 9
+# u
+# H
+# \
+# o
+# Decryption completed
+# ** Note: $stop    : /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_dec.sv(87)
 #    Time: 3035 ps  Iteration: 1  Instance: /stream_cipher_tb_enc
-# Break in Module stream_cipher_tb_enc at /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_enc.sv line 119
+# Break in Module stream_cipher_tb_enc at /home/iacopo/Scrivania/HES/AES_Sbox_based_Stream_Cipher/tb/stream_cipher_tb_dec.sv line 87
+# End time: 10:35:11 on Jun 09,2021, Elapsed time: 0:09:57
+# Errors: 0, Warnings: 1

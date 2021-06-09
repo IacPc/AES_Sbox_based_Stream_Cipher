@@ -1,10 +1,11 @@
 import subprocess as sub
 import re
-simmKey = int("12", 16)
-testFolder = "../db/test/"
-
+simmKey = int("12", 16)	# AAA : MAKE SURE THIS KEY COINCIDES WITH THE ONE HARDCODED IN THE TESTBENCH
+# testFolder = "../db/test/"
+testFolder = "~/Scrivania/"
 row = lambda i : i >> 4
 col = lambda i : i & 0x0F
+xor = lambda a,b : (a ^ b).to_bytes(1, byteorder="big")
 
 aes_sbox = [
     [int('63', 16), int('7c', 16), int('77', 16), int('7b', 16), int('f2', 16), int('6b', 16), int('6f', 16),
@@ -58,8 +59,8 @@ aes_sbox = [
 ]
 
 def writeOutputFile(index, data):
-		with open(testFolder + 'output' + str(index) +"_target", 'wb') as outfile: 
-			outfile.write(data)
+	with open(testFolder + 'output' + str(index) +"_target", 'wb') as outfile: 
+		outfile.write(data)
 
 
 testFiles = sub.run(args=["/bin/ls " + testFolder + "input*"], capture_output=True, text=True, shell=True).stdout.splitlines()
@@ -70,7 +71,6 @@ index = 0
 
 for f in testFiles:
 	counterOut = simmKey
-	assert (simmKey.bit_length() == 5), "simmKey on [" + str(simmKey.bit_length())+ "]"
 	print("***processing " + f + "***")
 
 	with open(f,"rb") as infile:
@@ -78,14 +78,14 @@ for f in testFiles:
 
 	print("***plaintext legth=" + str(len(inData)) + " ***")
 
-	outdata = b""
+	outdata = b''
 
 	for d in inData:
-		outdata = outdata + (d ^ aes_sbox[row(counterOut)][col(counterOut)]).to_bytes(1,byteorder="big")
+		outdata = outdata + xor(d, aes_sbox[row(counterOut)][col(counterOut)])
 		counterOut = (counterOut + 1) % 256
 
 	writeOutputFile(index, outdata)
-	index = index + 1
+	index += 1
 	print("***" + f + " encrypted correctly***")
 
 exit(0)
