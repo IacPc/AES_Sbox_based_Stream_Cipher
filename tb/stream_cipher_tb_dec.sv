@@ -35,9 +35,6 @@ module stream_cipher_tb_enc;
   );
 
  
-  wire txt_in_char_is_an_ascii_symbol = (txt_in_char >= 8'h01) &&
-                                 		(txt_in_char <= 8'h7F);
-
   int FP_PTXT;
   int FP_CTXT;
   string char;
@@ -48,7 +45,7 @@ module stream_cipher_tb_enc;
     @(reset_deassertion);
 
     @(posedge clk);
-    FP_CTXT = $fopen("../db/test/enc4", "rb");
+    FP_CTXT = $fopen("../db/test/enc3", "rb");
     $write("Decrypting file 'enc0' to 'dec0.txt' ...\n");
     
     while($fscanf(FP_CTXT, "%c", char) == 1) begin
@@ -76,7 +73,7 @@ module stream_cipher_tb_enc;
 		end
     end
 
-    FP_PTXT = $fopen("../db/test/dec4.txt", "w");
+    FP_PTXT = $fopen("../db/test/dec3.txt", "w");
     foreach(PTXT[i])
     $fwrite(FP_PTXT, "%c", PTXT[i]);
 

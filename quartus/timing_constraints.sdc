@@ -1,0 +1,6 @@
+create_clock -name clk -period 10 [get_ports clk]
+set_false_path -from [get_ports rst_n] -to [get_clocks clk]
+set_input_delay -min 1 -clock [get_clocks clk] [get_ports {rst_n din_valid simmetric_key[*] txt_in_char[*]}]
+set_input_delay -max 2 -clock [get_clocks clk] [get_ports {rst_n din_valid simmetric_key[*] txt_in_char[*]}]
+set_output_delay -min 1 -clock [get_clocks clk] [get_ports {dout_ready[*] txt_out_char[*]}]
+set_output_delay -max 2 -clock [get_clocks clk] [get_ports {dout_ready[*] txt_out_char[*]}]

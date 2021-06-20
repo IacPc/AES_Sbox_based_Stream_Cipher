@@ -1,0 +1,7 @@
+
+State Machine - |aes_sbox_stream_cipher|star
+Name star.S1 star.S2 star.S1_INIT star.S0 
+star.S0 0 0 0 0 
+star.S1_INIT 0 0 1 1 
+star.S2 0 1 0 1 
+star.S1 1 0 0 1 

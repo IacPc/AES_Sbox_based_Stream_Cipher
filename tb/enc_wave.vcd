@@ -1,0 +1,17 @@
+$date
+	Sat Jun 19 14:22:00 2021
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+$scope module stream_cipher_tb_enc $end
+$var reg 8 ! symmetric_key [7:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+bx !
+#15
+b10010 !

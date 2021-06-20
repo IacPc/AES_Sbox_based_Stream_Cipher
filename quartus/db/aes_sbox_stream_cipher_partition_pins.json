@@ -1,0 +1,121 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "txt_out_char[0]",
+					"strict" : false
+				},
+				{
+					"name" : "txt_out_char[1]",
+					"strict" : false
+				},
+				{
+					"name" : "txt_out_char[2]",
+					"strict" : false
+				},
+				{
+					"name" : "txt_out_char[3]",
+					"strict" : false
+				},
+				{
+					"name" : "txt_out_char[4]",
+					"strict" : false
+				},
+				{
+					"name" : "txt_out_char[5]",
+					"strict" : false
+				},
+				{
+					"name" : "txt_out_char[6]",
+					"strict" : false
+				},
+				{
+					"name" : "txt_out_char[7]",
+					"strict" : false
+				},
+				{
+					"name" : "dout_ready[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst_n",
+					"strict" : false
+				},
+				{
+					"name" : "txt_in_char[0]",
+					"strict" : false
+				},
+				{
+					"name" : "din_valid",
+					"strict" : false
+				},
+				{
+					"name" : "simmetric_key[0]",
+					"strict" : false
+				},
+				{
+					"name" : "simmetric_key[1]",
+					"strict" : false
+				},
+				{
+					"name" : "simmetric_key[2]",
+					"strict" : false
+				},
+				{
+					"name" : "simmetric_key[3]",
+					"strict" : false
+				},
+				{
+					"name" : "simmetric_key[6]",
+					"strict" : false
+				},
+				{
+					"name" : "simmetric_key[5]",
+					"strict" : false
+				},
+				{
+					"name" : "simmetric_key[4]",
+					"strict" : false
+				},
+				{
+					"name" : "simmetric_key[7]",
+					"strict" : false
+				},
+				{
+					"name" : "txt_in_char[1]",
+					"strict" : false
+				},
+				{
+					"name" : "txt_in_char[2]",
+					"strict" : false
+				},
+				{
+					"name" : "txt_in_char[3]",
+					"strict" : false
+				},
+				{
+					"name" : "txt_in_char[4]",
+					"strict" : false
+				},
+				{
+					"name" : "txt_in_char[5]",
+					"strict" : false
+				},
+				{
+					"name" : "txt_in_char[6]",
+					"strict" : false
+				},
+				{
+					"name" : "txt_in_char[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

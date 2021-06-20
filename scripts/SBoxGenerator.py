@@ -61,9 +61,8 @@ aes_sbox = [
 ]
 
 
-print("\tfunction SBOXLUT [{}:0] sbox_lut;".format(plaintextWidth - 1))
+print("\tfunction bit [{}:0] sbox_lut;".format(plaintextWidth - 1))
 print("\t\tinput  [{}:0] {};".format(plaintextWidth - 1, inputSignal))
-print("\t\tbegin")
 
 print("\t\t\tcase ({})".format(inputSignal))
 
@@ -73,5 +72,4 @@ for r,c in it.product(range(sBoxWidth), range(sBoxWidth)):
     print(fmt.format(formatInput(r,c), outputSignal, aes_sbox[r][c]))
 
 print("\t\t\tendcase")
-print("\t\tend")
 print("\tendfunction")

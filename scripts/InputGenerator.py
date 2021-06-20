@@ -21,9 +21,8 @@ def writeOutputASCIIFile(index, data):
 
 def main():
 	init()
-	index=2
-
-	for i in range(index, ASCIIINPUTFILENUMBER):
+	
+	for i in range(0, ASCIIINPUTFILENUMBER):
 		writeOutputASCIIFile(i, getRandomASCIIString(random.randint(0, MAXINPUTFILELENGTH)))
 
 	exit(0)
