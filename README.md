@@ -1,6 +1,6 @@
 # AES_Sbox_based_Stream_Cipher
 A possible HW description of a simple stream cipher based on the AES S-box.
-#Tests
+## Tests
 Follow these steps to perform testing on encryption:
 
 	1) Run InputGenerator.py to produce some
